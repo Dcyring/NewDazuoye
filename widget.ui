@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>482</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>房贷计算器</string>
+  </property>
+  <widget class="QComboBox" name="comboBox_jisuanFangshi">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>300</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>根据面积、单价计算</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>根据贷款总额计算</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>计算方式：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_daikuanLeibie">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>220</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>商业贷款</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>公积金贷款</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>组合型贷款</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>贷款类别：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_queren">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>390</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>401</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>   麻雀虽小，五脏俱全</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>451</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>小tip:所有窗口都可以拖动</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>110</y>
+     <width>431</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>方便您进行横向、纵向比较</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>150</y>
+     <width>441</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>希望能够帮助到您</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>comboBox_daikuanLeibie</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>Widget</receiver>
+   <slot>on_currentIndex_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>8</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_jisuanFangshi</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>Widget</receiver>
+   <slot>on_currentIndex_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>301</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_currentIndex_changed()</slot>
+ </slots>
+</ui>
